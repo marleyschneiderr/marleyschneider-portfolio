@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav a {
+    padding: 8px 12px;
+    color: inherit;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.portfolio-grid-item {
+    flex-grow: 0;
+    background: green;
+    width: calc(50% - 5px);
+    padding: 15px;
+}
+
+.hero-item {
+    width: 100%;
+}
