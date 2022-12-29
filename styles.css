@@ -12,7 +12,18 @@
     --light-brown: #d1c4b3 ;
 }
 
-/*At regular desktop width, mobile navigation will not be visible*/
+/* Connecting imported google font to document*/
+html {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* No links will have text decoration */
+a {
+    text-decoration: none;
+}
+
+/* At regular desktop width, mobile navigation will not be visible*/
+/* NAV BAR SECTION BEGINS */
 #mobile-nav {
     display: none;
 }
@@ -24,9 +35,16 @@
     width: 100%;
 }
 
-html {
-    font-family: 'Josefin Sans', sans-serif;
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    list-style: none;
+    height: 10vh;
+    background-color: #ffa590;
 }
+
 
 
 
