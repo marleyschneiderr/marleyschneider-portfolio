@@ -70,14 +70,14 @@ li a {
 
 .image-container {
     position: relative;
-    background-image: url(/images/Hero-Image.jpg);
+    background-image: url(/images/hero-image.png);
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
     /* Makes image go to the very top of the page */
     margin-top: 0vh;
-    animation: scale 15s;
+    animation: scale 15s; 
 }
 
 @keyframes scale {
