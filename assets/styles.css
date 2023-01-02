@@ -70,7 +70,7 @@ li a {
 
 .image-container {
     position: relative;
-    background-image: url("/images/hero-image.png");
+    background-image: url("../images/hero-image.png");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -170,7 +170,7 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 50px;
-    background-image: url("/images/code-refactor.png");
+    background-image: url("../images/code-refactor.png");
     background-size: cover;
     background-position: center;
 }
