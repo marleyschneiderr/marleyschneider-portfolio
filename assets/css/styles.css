@@ -70,7 +70,7 @@ li a {
 
 .image-container {
     position: relative;
-    background-image: url("../images/hero-image.png");
+    background-image: url("../images/hero-image.jpg");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -161,7 +161,6 @@ li a {
 }
 
 /* Code Refractor Section - Needs to be Larger than other Sections */
-
 .first-application {
     width: 600px;
     height: 600px;
@@ -175,6 +174,19 @@ li a {
     background-position: center;
 }
 
+/* 2nd Application Section */
+.smaller-applications {
+    width: 400px;
+    height: 400px;
+    background: black;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url("../images/code-refactor.png");
+    background-size: cover;
+    background-position: center;
+}
 
 
 
