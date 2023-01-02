@@ -138,6 +138,42 @@ li a {
     background-color: rgba(100, 100, 100, 0.4);
 }
 
+/* Application Section Styling */
+
+.application-container {
+    width: 100%;
+    height: auto;
+}
+
+.application-header {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.applications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+/* Code Refractor Section - Needs to be Larger than other Sections */
+
+.first-application {
+    width: 600px;
+    height: 600px;
+    background: black;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url(/images/code-refactor.png);
+    background-size: cover;
+    background-position: center;
+}
 
 
 
