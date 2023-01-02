@@ -175,7 +175,7 @@ li a {
 }
 
 /* 2nd Application Section */
-.smaller-applications {
+.smaller-application-2 {
     width: 400px;
     height: 400px;
     background: black;
@@ -183,9 +183,81 @@ li a {
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     margin: 50px;
-    background-image: url("../images/code-refactor.png");
+    background-image: url("../images/password-generator.png");
     background-size: cover;
     background-position: center;
+}
+
+/* 3rd Application Section */
+.smaller-application-3 {
+    width: 400px;
+    height: 400px;
+    background: black;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url("../images/miryka.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* 4th Application Section */
+.smaller-application-4 {
+    width: 400px;
+    height: 400px;
+    background: black;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url("../images/video-narration.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* 5th Application Section */
+.smaller-application-5 {
+    width: 400px;
+    height: 400px;
+    background: black;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px;
+    background-image: url("../images/dtc-final.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-container {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    /* Keeps text within the box of the image, does not show content exceeding the box */
+    overflow: hidden;
+}
+
+/* if hoovered over, more text explaining project becomes visible */
+.text-container:hover {
+    height: 250px;
+}
+
+/* makes application titles brown */
+.name {
+    margin-top: 10px;
+    color: var(--brown-text);
+    font-size: 2rems;
+}
+
+/* makes application description text brown */
+.content {
+    padding: 25px 0;
+    color:var(--mid-brown);
 }
 
 
