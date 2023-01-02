@@ -89,7 +89,54 @@ li a {
     }
 }
 
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* Makes overlay of large portrait go underneath the navbar */
+    z-index: 1;
+}
 
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    /* Allows text to be in a straight column instead of a straight lime */
+    flex-direction: column;
+    position: absolute;
+    /* Top and left will help with media query responsiveness */
+    top: 35%;
+    left: 10%;
+    font-size: 25px;
+    color: black;
+    /* Allows text in hero section to turn into capital letters without changing it in HTML*/
+    text-transform: uppercase;
+    /* Allows text to go on top of overlay section */
+    z-index: 2;
+}
+
+.firstWord {
+    color: var(--brown-text);
+}
+
+
+.resume-button {
+    border: 2px solid var(--brown-text);
+    width: 175px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.resume-text {
+    color: black;
+}
+
+.resume-button:hover {
+    background-color: rgba(100, 100, 100, 0.4);
+}
 
 
 
