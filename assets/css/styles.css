@@ -58,6 +58,18 @@ li a {
     font-weight: bold;
 }
 
+/* Styling for Subtitle */
+.subtitlecontent {
+    display: flex;
+    background-image: url("../images/subtitle-pic.png");
+    margin-bottom: 60px;
+    justify-content: flex-end;
+    padding: 40px;
+    background-size: cover;
+    font-size: 3rem;
+    color: var(--brown-text);
+}
+
 /* Hero Section Styling Starts Here*/
 
 /* Allows background image to take up 100% of the screen when someone arrives on the page */
@@ -111,7 +123,7 @@ li a {
     top: 35%;
     left: 10%;
     font-size: 25px;
-    color: black;
+    color: #2e1503;
     /* Allows text in hero section to turn into capital letters without changing it in HTML*/
     text-transform: uppercase;
     /* Allows text to go on top of overlay section */
@@ -131,11 +143,32 @@ li a {
 }
 
 .resume-text {
-    color: black;
+    color: #2e1503;
 }
 
 .resume-button:hover {
     background-color: rgba(100, 100, 100, 0.4);
+}
+
+/* About Me Section Styling */
+
+.about-me {
+    display: flex;
+    width: 70%;
+    margin:auto;
+}
+
+.push-left {
+    width: 20%;
+    border-right: 5px solid black;
+    font-size: 3em;
+    padding-right: 50px;
+}
+
+.push-right {
+    width:80%;
+    padding: 0 50px;
+    font-size: 110%;
 }
 
 /* Application Section Styling */
@@ -148,7 +181,7 @@ li a {
 .application-header {
     font-size: 4rem;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     margin: 20px;
 }
@@ -258,6 +291,14 @@ li a {
 .content {
     padding: 25px 0;
     color:var(--mid-brown);
+}
+
+.button {
+    border: 5px solid var(--brown-text);
+    width: 160px;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-bottom: 50px;
 }
 
 
