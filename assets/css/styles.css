@@ -70,7 +70,7 @@ li a {
     color: var(--brown-text);
 }
 
-/* Hero Section Styling Starts Here*/
+/* Hero Section Styling Starts Here */
 
 /* Allows background image to take up 100% of the screen when someone arrives on the page */
 .container {
@@ -152,7 +152,7 @@ li a {
 
 /* About Me Section Styling */
 
-.about-me {
+.main-section {
     display: flex;
     width: 70%;
     margin:auto;
@@ -186,7 +186,7 @@ li a {
     margin: 20px;
 }
 
-.applications {
+#applications {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,6 +195,11 @@ li a {
 
 /* Code Refractor Section - Needs to be Larger than other Sections */
 .first-application {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-end;
     width: 600px;
     height: 600px;
     background: black;
@@ -209,6 +214,8 @@ li a {
 
 /* 2nd Application Section */
 .smaller-application-2 {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     height: 400px;
     background: black;
@@ -223,6 +230,8 @@ li a {
 
 /* 3rd Application Section */
 .smaller-application-3 {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     height: 400px;
     background: black;
@@ -237,6 +246,8 @@ li a {
 
 /* 4th Application Section */
 .smaller-application-4 {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     height: 400px;
     background: black;
@@ -251,6 +262,8 @@ li a {
 
 /* 5th Application Section */
 .smaller-application-5 {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     height: 400px;
     background: black;
@@ -301,9 +314,25 @@ li a {
     margin-bottom: 50px;
 }
 
+/* Footer Section Styling Begins */
 
+#list{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
 
+/* Mobile View */
 
+@media only screen and (max-width: 1920px) {
+    
+}
+
+@media screen and (max-width: 750px) {
+    
+}
 
 
 
