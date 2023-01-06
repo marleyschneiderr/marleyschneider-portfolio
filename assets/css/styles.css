@@ -152,13 +152,16 @@ li a {
 
 /* About Me Section Styling */
 
-.main-section {
+h2 {
+    display: inline;
+}
+
+section {
     display: flex;
-    width: 70%;
-    margin:auto;
 }
 
 .push-left {
+    text-align: right;
     width: 20%;
     border-right: 5px solid black;
     font-size: 3em;
@@ -186,11 +189,16 @@ li a {
     margin: 20px;
 }
 
-#applications {
+.applications {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: wrap;
+}
+
+.application-item {
+    flex: 100%;
+    margin-bottom: 50px;
 }
 
 /* Code Refractor Section - Needs to be Larger than other Sections */
@@ -200,80 +208,48 @@ li a {
     flex: 1;
     align-items: flex-start;
     justify-content: flex-end;
-    width: 600px;
+    width: 900px;
     height: 600px;
     background: black;
     position: relative;
     box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin: 50px;
     background-image: url("../images/code-refactor.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.smaller-application {
+    display: inline-flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background: black;
+    position: relative;
+    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     background-size: cover;
     background-position: center;
 }
 
 /* 2nd Application Section */
 .smaller-application-2 {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 400px;
-    background: black;
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 50px;
     background-image: url("../images/password-generator.png");
-    background-size: cover;
-    background-position: center;
 }
 
 /* 3rd Application Section */
 .smaller-application-3 {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 400px;
-    background: black;
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 50px;
     background-image: url("../images/miryka.png");
-    background-size: cover;
-    background-position: center;
 }
 
 /* 4th Application Section */
 .smaller-application-4 {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 400px;
-    background: black;
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 50px;
     background-image: url("../images/video-narration.png");
-    background-size: cover;
-    background-position: center;
 }
 
 /* 5th Application Section */
 .smaller-application-5 {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 400px;
-    background: black;
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin: 50px;
     background-image: url("../images/dtc-final.png");
-    background-size: cover;
-    background-position: center;
 }
 
 .text-container {
@@ -326,8 +302,13 @@ li a {
 
 /* Mobile View */
 
-@media only screen and (max-width: 1920px) {
-    
+@media only screen and (max-width: 1272px) {
+    .smaller-application, .first-application {
+        width: 100%;
+    }
+    .smaller-application-2, .smaller-application-4 {
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 750px) {
