@@ -154,6 +154,11 @@ li a {
 
 /* About Me Section Styling */
 
+#aboutme {
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
 h2 {
     display: inline;
 }
@@ -166,7 +171,7 @@ section {
     text-align: right;
     width: 20%;
     border-right: 5px solid black;
-    font-size: 3em;
+    font-size: 2em;
     padding-right: 50px;
 }
 
@@ -294,6 +299,10 @@ section {
 }
 
 /* Footer Section Styling Begins */
+
+#contactme {
+    margin-top: 20px;
+}
 
 .footerList {
     display: flex;
