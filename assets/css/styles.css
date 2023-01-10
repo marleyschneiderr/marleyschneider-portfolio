@@ -327,9 +327,49 @@ ul > li{
     }
 }
 
-@media screen and (max-width: 750px) {
+
+/* Tablets -  */
+@media screen and (max-width: 992px) {
+    .nav-bar {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    li a, ul {
+        flex-direction: column;
+        display: block;
+        font-size: 20px;
+    }
     
+  }
+  
+
+  /* Large smartphones - */
+  @media screen and (max-width: 768px) {
+    .nav-bar {
+        
+    }
+
+
+
 }
+            
+  
+  /* Small smartphones - */
+  @media screen and (max-width: 576px) {
+    .push-left {
+        font-size: 12px;
+        display: block;
+    }
+
+    #footerList {
+        flex-direction: column;
+        font-size: 10px;
+    }
+    
+  }
+  
+
 
 
 
