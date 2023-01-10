@@ -28,42 +28,52 @@ a {
     display: none;
 }
 
-/* z-index allows boxes to be on top of one another, the higher the number, the bigger the position */
-.nav-bar {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-}
-
-ul {
+.nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 10%;
-    list-style: none;
-    height: 10vh;
     background-color: #ffa590;
-}
-
-li a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2rem;
+    align-items: center;
+    padding: 0 10%;
+    height: 10vh;
 }
 
 #name {
+    align-self: center;
+    margin-left: 1.2rem;
     color: var(--brown-text);
     font-size: 40px;
     font-weight: bold;
 }
 
+#toggle-menu {
+    display: none;
+}
+
+/* z-index allows boxes to be on top of one another, the higher the number, the bigger the position */
+.nav-bar {
+   display: contents;
+}
+
+.nav-bar a {
+    padding: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.menu-icon {
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+    display: none;
+}
+
 /* Styling for Subtitle */
+
 .subtitlecontent {
     display: flex;
     width: 100%;
     background-image: url("../images/subtitle-pic.png");
-    margin-bottom: 60px;
     justify-content: flex-end;
     padding: 40px;
     background-size: cover;
@@ -300,21 +310,21 @@ section {
 
 /* Footer Section Styling Begins */
 
-#contactme {
+#contactme  {
     margin-top: 20px;
 }
 
 .footerList {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
     font-size: 2rem;
-    /* color: white; */
+    background: #ffa590;
+    font-size: 20px;
 }
 
-ul > li {
-  color: #fff;
-}
 
 /* Mobile View */
 
@@ -325,50 +335,55 @@ ul > li {
     .smaller-application-2, .smaller-application-4 {
         margin-bottom: 50px;
     }
-}
+} 
 
-
-/* Tablets -  */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 700px) {
     .nav-bar {
-        flex-direction: column;
-        height: 200px;
+        display: none;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        background-color: #ffa590;
+        text-align: center;
+        z-index: 2;
     }
 
-    li a, ul {
-        flex-direction: column;
+    .nav-bar.responsive {
         display: block;
-        font-size: 20px;
-    }
-    
-  }
-  
-
-  /* Large smartphones - */
-  @media screen and (max-width: 768px) {
-    .nav-bar {
-        
     }
 
+    .nav-bar a {
+        display: block;
+    }
 
+    .menu-icon {
+        display: block;
+        z-index: 1;
+    }
+
+    #toggle-menu:checked ~ .nav-bar {
+        display: block;
+    }
 
 }
-            
-  
-  /* Small smartphones - */
-  @media screen and (max-width: 576px) {
+
+@media screen and (max-width: 480px) {
+    .hero-text h1 {
+        top: 0%;
+        padding-top: 30px;
+    }
+
     .push-left {
         font-size: 12px;
         display: block;
     }
 
-    #footerList {
+    .footerList {
         flex-direction: column;
-        font-size: 10px;
     }
-    
-  }
-  
+}
+
 
 
 

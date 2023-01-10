@@ -2,47 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>  
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Marley's Portfolio Site</title>
 </head>
 <body>
+
     <!--Desktop Navbar-->
-    <section id="nav">
-        <div class="nav-bar">
-            <div class="links">
-                <ul>
-                    <li><a href="#name" id="name">Marley Schneider</a></li>
-                    <li><a href="#projects" id="project">Applications</a></li>
-                    <li><a href="#aboutme" id="about">About Me</a></li>
-                    <li><a href="#contactme" id="contact">Contact Information</a></li>
-                </ul>
-            </div>
-    <!--Subitle Section Under NavBar---->
-    <section id="subtitle">
-        <div class="subtitlecontent">
-          Welcome to My Web Development Journey
+    <section class="nav">
+        <div>
+            <div id="name">Marley Schneider</div>
         </div>
-    </section>
-    <!--End of Subtitle Section Under NavBar-->
+        <input type="checkbox" id="toggle-menu">
+            <label class="menu-icon" for="toggle-menu"> 
+                <a id="menu-icon">
+                <i class="fa fa-bars"></i></a>
+            </label>
+        <div class="nav-bar">
+            <a href="#projects" id="project">Applications</a>
+            <a href="#aboutme" id="about">About Me</a>
+            <a href="#contactme" id="contact">Contact Information</a>
         </div>  
     </section>
     <!--End of Navbar-->
+
+    <!--Subitle Section Under NavBar---->
+    <section id="subtitle">
+        <div class="subtitlecontent">Welcome to My Web Development Journey</div>
+    </section>
+    <!--End of Subtitle Section Under NavBar-->
 
     <!--Start of Hero Section-->
     <section id="hero">
         <div class="container">
             <div class="overlay"></div>
             <div class="image-container"></div>
-            </div>
-            <div class="hero-text">
-                <h1>
-                    <span class="firstWord">Aspiring</span><br />Full Stack
-                    <br />Developer 
-                </h1>
-                <a href="#" class="resume-button"><span class="resume-text">Resume</span></a>
-            </div>
+        </div>
+        <div class="hero-text">
+            <h1>
+                <span class="firstWord">Aspiring</span><br />Full Stack
+                <br />Developer 
+            </h1>
+            <a href="#" class="resume-button"><span class="resume-text">Resume</span></a>
+        </div>
         </div>
     </section>
     <!--End of Hero Section-->
@@ -179,17 +183,17 @@
     <!--Footer Section Begins-->
     <section id="contactme">
         <div class="push-left">
-          <h2>Contact Me</h2>
+            <h2>Contact Me</h2>
         </div>
-        <div class="push-right">
-            <ul class="footerlist">
-                <li>1-425-260-2925</li>
-                <li>Email: marleysue@gmail.com</li>
-                <li><a href="https://github.com/marleyschneiderr">Github</a></li>
-            </ul>
+            <div class="footerlist">
+                <div>1-425-260-2925</div>
+                <div>marleysue@gmail.com</div>
+                <div><a href="https://github.com/marleyschneiderr">Github</a></div>
+            </div>
         </div>
         </div>
     </section>
+    <!--Footer Section Ends-->
 
 </body>
 </html>
