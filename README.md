@@ -24,7 +24,7 @@ Created by Marley Schneider, Github: https://github.com/marleyschneiderr
 
 This website was designed to serve as the home base for Marley Schneider's web development projects. This page can be used to access and examine Marley's web development work, contact Marley, discover more about Marley's background, and view Marley's Github with previous work.
 
-![Screenshot of Full Webpage](assets/images/Challenge1-Image.png)
+![Screenshot of Full Webpage](assets/images/Portfolio-Pic.png)
 
 ## Credits
 
