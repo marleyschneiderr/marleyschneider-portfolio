@@ -61,6 +61,7 @@ li a {
 /* Styling for Subtitle */
 .subtitlecontent {
     display: flex;
+    width: 100%;
     background-image: url("../images/subtitle-pic.png");
     margin-bottom: 60px;
     justify-content: flex-end;
@@ -128,6 +129,7 @@ li a {
     text-transform: uppercase;
     /* Allows text to go on top of overlay section */
     z-index: 2;
+    padding: 50px;
 }
 
 .firstWord {
@@ -219,6 +221,7 @@ section {
     background-position: center;
 }
 
+/* Styling for smaller applications */
 .smaller-application {
     display: inline-flex;
     flex-direction: column;
@@ -292,12 +295,16 @@ section {
 
 /* Footer Section Styling Begins */
 
-#list{
+.footerList {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     font-size: 2rem;
-    color: white;
+    /* color: white; */
+}
+
+ul > li{
+  color: #fff;
 }
 
 /* Mobile View */
@@ -327,51 +334,3 @@ section {
 
 
 
-
-
-
-
-
-
-/* {
-    box-sizing: border-box;
-}
-
-body {
-    margin:0;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: darkblue;
-    color: #fff;
-}
-
-.nav {
-    display: flex;
-    list-style: none;
-}
-
-.nav a {
-    padding: 8px 12px;
-    color: inherit;
-}
-
-.portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.portfolio-grid-item {
-    flex-grow: 0;
-    background: green;
-    width: calc(50% - 5px);
-    padding: 15px;
-}
-
-.hero-item {
-    width: 100%;
-}
